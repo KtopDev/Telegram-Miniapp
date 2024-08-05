@@ -52,7 +52,7 @@ class BitcoinAds extends Component {
         
       </div>
     );
-  }
+  } 
 }
-
+ 
 export default BitcoinAds;
