@@ -33,50 +33,23 @@ class BitcoinAds extends Component {
             </Typography>
         </Card>
         
-        {/* <AppBar position="static" style={{ marginBottom: '15px', background: 'white', border: 'none'}}> */}
-          <Tabs value={this.state.selectedTab} onChange={this.handleTabChange} >
-            {tabsData1.map((tab, index) => (
-              <Tab label={tab.label} key={index} style={{ marginTop: '10px', borderRadius: '20px', background: '#e3dddd', marginRight: "20px" }}/>
-            ))}
-          </Tabs>
-        {/* </AppBar> */}
         <Card style={{ marginBottom: '10px' }}>
           <CardContent>
             <Link to="/detail">
-                <img src={tabsData1[this.state.selectedTab].image} alt="Phone" 
+                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEQePG8HgyJ7Ii7d8CFdHcJsdryUVjx31NlQ&s"} alt="Phone" 
                 style={{maxWidth: '100%', width: '100%', borderRadius: '20px'}} />
             </Link>
             
             <Typography variant="h5" style={{ marginTop: '10px' }}>
-              {tabsData1[this.state.selectedTab].title}
+              Start your campaign
             </Typography>
             <Typography variant="h7" style={{ marginTop: '10px' }}>
-              {tabsData1[this.state.selectedTab].content}
+              Rewards with notcoin, try for now ....
             </Typography>
-            <Button variant="contained" color="primary" style={{ marginTop: '10px', borderRadius: '10px', background: '#f0f0f5', color: 'black' }}>
-              Start Your Campaign
-            </Button>
+           
           </CardContent>
         </Card>
-
-        <Card style={{ marginBottom: '10px' }}>
-          <CardContent>
-            <Link  to="/detail">
-                <img src={tabsData2[this.state.selectedTab].image} alt="Phone" 
-                style={{maxWidth: '100%', width: '100%', borderRadius: '20px'}} />
-            </Link>
-            
-            <Typography variant="h5" style={{ marginTop: '10px' }}>
-              {tabsData2[this.state.selectedTab].title}
-            </Typography>
-            <Typography variant="h7" style={{ marginTop: '10px' }}>
-              {tabsData2[this.state.selectedTab].content}
-            </Typography>
-            <Button variant="contained" color="primary" style={{ marginTop: '10px', borderRadius: '10px', background: '#f0f0f5', color: 'black' }}>
-              Start Your Campaign
-            </Button>
-          </CardContent>
-        </Card>
+        
       </div>
     );
   }
